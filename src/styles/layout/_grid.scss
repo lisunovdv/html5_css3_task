@@ -1,0 +1,6 @@
+@mixin make_columns($columns) {
+	@media screen and (min-width: $tablet-breakpoint) {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,33 @@
+.btn {
+	display: inline-block;
+	padding: 15px 18px;
+	border: none;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	border-radius: 2px;
+	outline: none;
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn-primary {
+	text-transform: uppercase;
+	background-color: transparent;
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: #eee;
+		transition: background-color 0.2s;
+	}
+
+	&:active {
+		background-color: #ddd;
+	}
+}

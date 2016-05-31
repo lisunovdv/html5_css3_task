@@ -1,0 +1,47 @@
+.product-block {
+	@include clearfix();
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: box-shadow 0.2s;
+	&:hover {
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		transition: box-shadow 0.2s;
+	}
+}
+
+.img-partial,
+.info-partial {
+	@include make_columns(2);
+}
+
+.img-partial {
+	background-color: #ededed;
+	overflow: hidden;
+
+	@media screen and (min-width: $tablet-breakpoint) {
+		width: 40%;
+	}
+	.product-image {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		transform: scale(1);
+		transition: transform 2s;
+		&:hover {
+			transform: scale(1.2);
+			transition: transform 2s;
+		}
+
+	}
+}
+
+.info-panel {
+	padding: calc-em(32px) calc-em(25px);
+}
+.buttons-panel {
+	padding: calc-em(8px);
+}
+
+.buttons-panel {
+	border-top: 2px solid #f8f8f8;
+}
